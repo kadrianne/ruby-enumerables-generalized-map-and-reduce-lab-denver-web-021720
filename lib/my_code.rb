@@ -15,4 +15,7 @@ def reduce(source_array, start_point = 0)
   total = start_point
   while i < source_array.length do
     total += yield()
-  i += log10
+  i += 1
+  end
+  total
+end
