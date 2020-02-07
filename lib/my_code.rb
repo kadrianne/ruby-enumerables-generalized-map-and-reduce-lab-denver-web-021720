@@ -17,5 +17,9 @@ def reduce(source_array, start_point = 0)
     total = yield(total, source_array[i])
   i += 1
   end
-  total
+  if total > 0
+    total
+  else
+    return true
+  end
 end
