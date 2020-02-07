@@ -8,3 +8,11 @@ def map(source_array)
   end
   new_array
 end
+
+def reduce(source_array, start_point = 0)
+  new_array = []
+  i = 0
+  total = start_point
+  while i < source_array.length do
+    total += yield()
+  i += log10
